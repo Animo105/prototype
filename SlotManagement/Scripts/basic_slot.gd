@@ -4,6 +4,12 @@ class_name BasicSlot
 @abstract func element_instance_changed()
 
 func _init() -> void:
+	set_texture_size()
+
+func _ready() -> void:
+	set_texture_size()
+
+func set_texture_size():
 	custom_minimum_size = Settings.TextureSize
 	size = Settings.TextureSize
 

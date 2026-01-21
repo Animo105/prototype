@@ -9,6 +9,7 @@ extends BasicSlot
 var produced_instance : ElementInstance
 
 func _ready() -> void:
+	set_texture_size()
 	if element_produced == null:
 		push_error("Infinite Slot without element to produce")
 		queue_free()

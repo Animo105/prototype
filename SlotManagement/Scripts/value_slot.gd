@@ -4,6 +4,7 @@ extends BasicSlot
 @onready var texture_rect: TextureRect = $TextureRect
 
 func _ready() -> void:
+	set_texture_size()
 	label.text = ""
 	self_modulate.a = 0.3
 

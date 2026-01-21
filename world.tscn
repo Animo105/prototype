@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://drdsr0cu81rxj"]
+[gd_scene load_steps=12 format=3 uid="uid://drdsr0cu81rxj"]
 
 [ext_resource type="Script" uid="uid://cnodfjj1dm1rt" path="res://world.gd" id="1_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://cmyf1ng3pfshx" path="res://SlotManagement/element_slot.tscn" id="1_f3sb7"]
@@ -10,6 +10,7 @@
 [ext_resource type="Resource" uid="uid://dlg3l4wshpdyf" path="res://Materials/Elements/earth_crystal.tres" id="8_wse8f"]
 [ext_resource type="Resource" uid="uid://b0jlcn4xqba3w" path="res://Materials/Elements/fire_crystal.tres" id="9_ic0uy"]
 [ext_resource type="Resource" uid="uid://d4fddfvct8cd0" path="res://Materials/Elements/water_crystal.tres" id="10_k3n1d"]
+[ext_resource type="PackedScene" uid="uid://crj04rpwy0pm1" path="res://Crafting Stations/grinder.tscn" id="11_ic0uy"]
 
 [node name="world" type="Control"]
 layout_mode = 3
@@ -57,10 +58,10 @@ layout_mode = 2
 
 [node name="Craft Station" parent="." instance=ExtResource("3_tlwt5")]
 layout_mode = 1
-anchor_right = 0.30600002
-anchor_bottom = 0.64400005
-offset_right = 0.1599884
-offset_bottom = 0.15997314
+anchor_right = 0.223
+anchor_bottom = 0.453
+offset_right = 0.27999878
+offset_bottom = -0.08000183
 
 [node name="Value Slot" parent="." instance=ExtResource("4_aqk2v")]
 layout_mode = 0
@@ -111,3 +112,13 @@ offset_right = 445.0
 offset_bottom = 351.0
 element_produced = ExtResource("10_k3n1d")
 produced_stability = 1
+
+[node name="Grinder" parent="." instance=ExtResource("11_ic0uy")]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 190.0
+offset_top = 30.0
+offset_right = 190.0
+offset_bottom = 30.0
+grow_horizontal = 1
+grow_vertical = 1

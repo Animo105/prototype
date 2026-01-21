@@ -4,6 +4,7 @@ class_name ElementSlot
 @onready var texture_rect: TextureRect = $TextureRect
 
 func _ready() -> void:
+	set_texture_size()
 	self_modulate.a = 0.3
 
 func element_instance_changed():
