@@ -1,4 +1,4 @@
 extends Node
 
 
-var TextureSize : Vector2 = Vector2(32, 32)
+var TextureSize : Vector2 = Vector2(64, 64)

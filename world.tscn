@@ -39,54 +39,65 @@ grow_vertical = 0
 columns = 3
 
 [node name="ElementSlot" parent="GridContainer" instance=ExtResource("1_f3sb7")]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 
 [node name="ElementSlot2" parent="GridContainer" instance=ExtResource("1_f3sb7")]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 
 [node name="ElementSlot3" parent="GridContainer" instance=ExtResource("1_f3sb7")]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 
 [node name="ElementSlot4" parent="GridContainer" instance=ExtResource("1_f3sb7")]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 
 [node name="ElementSlot5" parent="GridContainer" instance=ExtResource("1_f3sb7")]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 
 [node name="ElementSlot6" parent="GridContainer" instance=ExtResource("1_f3sb7")]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 
 [node name="Craft Station" parent="." instance=ExtResource("3_tlwt5")]
 layout_mode = 1
+anchors_preset = -1
 anchor_right = 0.223
 anchor_bottom = 0.453
 offset_right = 0.27999878
 offset_bottom = -0.08000183
 
 [node name="Value Slot" parent="." instance=ExtResource("4_aqk2v")]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 0
-offset_left = 551.0
-offset_top = 77.0
-offset_right = 591.0
-offset_bottom = 117.0
+offset_left = 651.0
+offset_top = 76.0
+offset_right = 691.0
+offset_bottom = 116.0
 
 [node name="Trash Slot" parent="." instance=ExtResource("7_pkg7o")]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 0
-offset_left = 551.0
-offset_top = 179.0
-offset_right = 591.0
-offset_bottom = 219.0
+offset_left = 656.0
+offset_top = 231.0
+offset_right = 696.0
+offset_bottom = 271.0
 
 [node name="Infinite Slot" parent="." instance=ExtResource("5_dwbse")]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 0
-offset_left = 270.0
-offset_top = 311.0
-offset_right = 310.0
-offset_bottom = 351.0
+offset_left = 238.0
+offset_top = 310.0
+offset_right = 302.0
+offset_bottom = 374.0
 element_produced = ExtResource("6_pkg7o")
 produced_stability = 1
 
 [node name="Infinite Slot2" parent="." instance=ExtResource("5_dwbse")]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 0
 offset_left = 314.0
 offset_top = 312.0
@@ -96,29 +107,30 @@ element_produced = ExtResource("8_wse8f")
 produced_stability = 1
 
 [node name="Infinite Slot3" parent="." instance=ExtResource("5_dwbse")]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 0
-offset_left = 360.0
-offset_top = 309.0
-offset_right = 400.0
-offset_bottom = 349.0
+offset_left = 398.0
+offset_top = 311.0
+offset_right = 462.0
+offset_bottom = 375.0
 element_produced = ExtResource("9_ic0uy")
 produced_stability = 1
 
 [node name="Infinite Slot4" parent="." instance=ExtResource("5_dwbse")]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 0
-offset_left = 405.0
-offset_top = 311.0
-offset_right = 445.0
-offset_bottom = 351.0
+offset_left = 473.0
+offset_top = 313.0
+offset_right = 537.0
+offset_bottom = 377.0
 element_produced = ExtResource("10_k3n1d")
 produced_stability = 1
 
 [node name="Grinder" parent="." instance=ExtResource("11_ic0uy")]
 layout_mode = 1
-anchors_preset = 0
-offset_left = 190.0
-offset_top = 30.0
-offset_right = 190.0
-offset_bottom = 30.0
+offset_left = 221.0
+offset_top = 24.0
+offset_right = 221.0
+offset_bottom = 24.0
 grow_horizontal = 1
 grow_vertical = 1
