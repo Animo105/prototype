@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Element" load_steps=3 format=3 uid="uid://ci08gaja2dyin"]
+
+[ext_resource type="Script" uid="uid://d1ygwtf3rlska" path="res://Materials/element.gd" id="1_yanro"]
+[ext_resource type="Texture2D" uid="uid://coa5i6j6qiojq" path="res://Assets/computer (tkt).png" id="2_15it7"]
+
+[resource]
+script = ExtResource("1_yanro")
+name = "Computer"
+id = "computer"
+texture = ExtResource("2_15it7")
+primary_type = 3
+sub_type = 4
+basic_value = 20.0
+metadata/_custom_type_script = "uid://d1ygwtf3rlska"

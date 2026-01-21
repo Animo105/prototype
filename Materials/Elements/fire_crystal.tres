@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Element" load_steps=3 format=3 uid="uid://b0jlcn4xqba3w"]
+
+[ext_resource type="Script" uid="uid://d1ygwtf3rlska" path="res://Materials/element.gd" id="1_3jgum"]
+[ext_resource type="Texture2D" uid="uid://cp7afntvmciha" path="res://Assets/red_crystal.png" id="2_78tv6"]
+
+[resource]
+script = ExtResource("1_3jgum")
+name = "Fire Crystal"
+id = "fire"
+texture = ExtResource("2_78tv6")
+primary_type = 1
+sub_type = 2
+basic_value = 1.0
+metadata/_custom_type_script = "uid://d1ygwtf3rlska"

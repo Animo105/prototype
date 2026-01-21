@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Element" load_steps=3 format=3 uid="uid://sp6mmmcn8320"]
+
+[ext_resource type="Script" uid="uid://d1ygwtf3rlska" path="res://Materials/element.gd" id="1_70y37"]
+[ext_resource type="Texture2D" uid="uid://wxbt21lfcof0" path="res://Assets/ash.png" id="2_8j6ri"]
+
+[resource]
+script = ExtResource("1_70y37")
+name = "Ash"
+id = "ash"
+texture = ExtResource("2_8j6ri")
+primary_type = 2
+basic_value = 3.0
+tags = Array[int]([0])
+metadata/_custom_type_script = "uid://d1ygwtf3rlska"

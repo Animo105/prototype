@@ -1,0 +1,113 @@
+[gd_scene load_steps=11 format=3 uid="uid://drdsr0cu81rxj"]
+
+[ext_resource type="Script" uid="uid://cnodfjj1dm1rt" path="res://world.gd" id="1_aqk2v"]
+[ext_resource type="PackedScene" uid="uid://cmyf1ng3pfshx" path="res://SlotManagement/element_slot.tscn" id="1_f3sb7"]
+[ext_resource type="PackedScene" uid="uid://dfn5ipwbv0sl" path="res://Crafting Stations/transmutation_circle.tscn" id="3_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://7q4pnwp4iffn" path="res://SlotManagement/value_slot.tscn" id="4_aqk2v"]
+[ext_resource type="PackedScene" uid="uid://c7xnggm3uvf36" path="res://SlotManagement/infinite_slot.tscn" id="5_dwbse"]
+[ext_resource type="Resource" uid="uid://7wndd6kf6l32" path="res://Materials/Elements/air_crystal.tres" id="6_pkg7o"]
+[ext_resource type="PackedScene" uid="uid://8g3q43kxcp31" path="res://SlotManagement/trash_slot.tscn" id="7_pkg7o"]
+[ext_resource type="Resource" uid="uid://dlg3l4wshpdyf" path="res://Materials/Elements/earth_crystal.tres" id="8_wse8f"]
+[ext_resource type="Resource" uid="uid://b0jlcn4xqba3w" path="res://Materials/Elements/fire_crystal.tres" id="9_ic0uy"]
+[ext_resource type="Resource" uid="uid://d4fddfvct8cd0" path="res://Materials/Elements/water_crystal.tres" id="10_k3n1d"]
+
+[node name="world" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aqk2v")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -119.0
+offset_top = -83.0
+offset_right = -15.0
+offset_bottom = -15.0
+grow_horizontal = 0
+grow_vertical = 0
+columns = 3
+
+[node name="ElementSlot" parent="GridContainer" instance=ExtResource("1_f3sb7")]
+layout_mode = 2
+
+[node name="ElementSlot2" parent="GridContainer" instance=ExtResource("1_f3sb7")]
+layout_mode = 2
+
+[node name="ElementSlot3" parent="GridContainer" instance=ExtResource("1_f3sb7")]
+layout_mode = 2
+
+[node name="ElementSlot4" parent="GridContainer" instance=ExtResource("1_f3sb7")]
+layout_mode = 2
+
+[node name="ElementSlot5" parent="GridContainer" instance=ExtResource("1_f3sb7")]
+layout_mode = 2
+
+[node name="ElementSlot6" parent="GridContainer" instance=ExtResource("1_f3sb7")]
+layout_mode = 2
+
+[node name="Craft Station" parent="." instance=ExtResource("3_tlwt5")]
+layout_mode = 1
+anchor_right = 0.30600002
+anchor_bottom = 0.64400005
+offset_right = 0.1599884
+offset_bottom = 0.15997314
+
+[node name="Value Slot" parent="." instance=ExtResource("4_aqk2v")]
+layout_mode = 0
+offset_left = 551.0
+offset_top = 77.0
+offset_right = 591.0
+offset_bottom = 117.0
+
+[node name="Trash Slot" parent="." instance=ExtResource("7_pkg7o")]
+layout_mode = 0
+offset_left = 551.0
+offset_top = 179.0
+offset_right = 591.0
+offset_bottom = 219.0
+
+[node name="Infinite Slot" parent="." instance=ExtResource("5_dwbse")]
+layout_mode = 0
+offset_left = 270.0
+offset_top = 311.0
+offset_right = 310.0
+offset_bottom = 351.0
+element_produced = ExtResource("6_pkg7o")
+produced_stability = 1
+
+[node name="Infinite Slot2" parent="." instance=ExtResource("5_dwbse")]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 312.0
+offset_right = 354.0
+offset_bottom = 352.0
+element_produced = ExtResource("8_wse8f")
+produced_stability = 1
+
+[node name="Infinite Slot3" parent="." instance=ExtResource("5_dwbse")]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 309.0
+offset_right = 400.0
+offset_bottom = 349.0
+element_produced = ExtResource("9_ic0uy")
+produced_stability = 1
+
+[node name="Infinite Slot4" parent="." instance=ExtResource("5_dwbse")]
+layout_mode = 0
+offset_left = 405.0
+offset_top = 311.0
+offset_right = 445.0
+offset_bottom = 351.0
+element_produced = ExtResource("10_k3n1d")
+produced_stability = 1

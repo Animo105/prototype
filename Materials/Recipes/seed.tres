@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Recipe" load_steps=2 format=3 uid="uid://b7c0lgmtslblm"]
+
+[ext_resource type="Script" uid="uid://huvqt48l1o8m" path="res://Materials/recipe.gd" id="1_ygjml"]
+
+[resource]
+script = ExtResource("1_ygjml")
+product_id = "basic_seed"
+stability_range = Vector2(0, 50)
+sorted_components_id = Array[String](["air", "earth", "water"])
+metadata/_custom_type_script = "uid://huvqt48l1o8m"

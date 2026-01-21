@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqpo3sr18ca2r"]
+
+[ext_resource type="Script" uid="uid://76or64xqj0xw" path="res://SlotManagement/Scripts/product_slot.gd" id="1_l4dmc"]
+
+[node name="ProductSlot" type="PanelContainer"]
+self_modulate = Color(3.85046e-06, 0, 0.76361996, 1)
+custom_minimum_size = Vector2(32, 32)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_l4dmc")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+expand_mode = 1

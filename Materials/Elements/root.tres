@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Element" load_steps=3 format=3 uid="uid://tkectq3j5dq4"]
+
+[ext_resource type="Script" uid="uid://d1ygwtf3rlska" path="res://Materials/element.gd" id="1_24esf"]
+[ext_resource type="Texture2D" uid="uid://cg20owqipyuix" path="res://Assets/root.png" id="2_mxbef"]
+
+[resource]
+script = ExtResource("1_24esf")
+name = "Roots"
+id = "basic_roots"
+texture = ExtResource("2_mxbef")
+primary_type = 2
+sub_type = 5
+basic_value = 3.0
+metadata/_custom_type_script = "uid://d1ygwtf3rlska"

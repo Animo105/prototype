@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Element" load_steps=3 format=3 uid="uid://d4fddfvct8cd0"]
+
+[ext_resource type="Script" uid="uid://d1ygwtf3rlska" path="res://Materials/element.gd" id="1_2tjp3"]
+[ext_resource type="Texture2D" uid="uid://dv5b1lrjm5pb6" path="res://Assets/water_crystal.png" id="2_onkn7"]
+
+[resource]
+script = ExtResource("1_2tjp3")
+name = "Water Crystal"
+id = "water"
+texture = ExtResource("2_onkn7")
+primary_type = 1
+sub_type = 2
+basic_value = 1.0
+metadata/_custom_type_script = "uid://d1ygwtf3rlska"

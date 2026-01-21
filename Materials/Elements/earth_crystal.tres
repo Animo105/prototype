@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Element" load_steps=3 format=3 uid="uid://dlg3l4wshpdyf"]
+
+[ext_resource type="Script" uid="uid://d1ygwtf3rlska" path="res://Materials/element.gd" id="1_y8r87"]
+[ext_resource type="Texture2D" uid="uid://els0j5vm8m3m" path="res://Assets/earth_crystal.png" id="2_6vc65"]
+
+[resource]
+script = ExtResource("1_y8r87")
+name = "Earth Crystal"
+id = "earth"
+texture = ExtResource("2_6vc65")
+primary_type = 1
+sub_type = 2
+basic_value = 1.0
+metadata/_custom_type_script = "uid://d1ygwtf3rlska"

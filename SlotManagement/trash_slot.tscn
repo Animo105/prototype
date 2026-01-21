@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://8g3q43kxcp31"]
+
+[ext_resource type="Script" uid="uid://ctyajtuu82g7d" path="res://SlotManagement/Scripts/trash_slot.gd" id="1_b6py1"]
+
+[node name="Trash Slot" type="PanelContainer"]
+self_modulate = Color(1, 0, 0, 1)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_b6py1")

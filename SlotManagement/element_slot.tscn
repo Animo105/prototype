@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmyf1ng3pfshx"]
+
+[ext_resource type="Script" uid="uid://ij8g6cjihvfe" path="res://SlotManagement/Scripts/element_slot.gd" id="1_jb1gm"]
+
+[node name="ElementSlot" type="PanelContainer"]
+self_modulate = Color(1, 1, 1, 0.44313726)
+custom_minimum_size = Vector2(32, 32)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_jb1gm")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+expand_mode = 1
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Element" load_steps=3 format=3 uid="uid://cqwtsucq282ej"]
+
+[ext_resource type="Script" uid="uid://d1ygwtf3rlska" path="res://Materials/element.gd" id="1_0pd1p"]
+[ext_resource type="Texture2D" uid="uid://y5hfxmfnj8cw" path="res://Assets/sand.png" id="2_a1cck"]
+
+[resource]
+script = ExtResource("1_0pd1p")
+name = "Sand"
+id = "sand"
+texture = ExtResource("2_a1cck")
+primary_type = 1
+sub_type = 4
+basic_value = 3.0
+tags = Array[int]([0])
+metadata/_custom_type_script = "uid://d1ygwtf3rlska"

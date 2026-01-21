@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7xnggm3uvf36"]
+
+[ext_resource type="Script" uid="uid://clwmy1blnmax6" path="res://SlotManagement/Scripts/infinite_slot.gd" id="1_lkesn"]
+
+[node name="Infinite Slot" type="PanelContainer"]
+custom_minimum_size = Vector2(32, 32)
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_default_cursor_shape = 2
+script = ExtResource("1_lkesn")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2

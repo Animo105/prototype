@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Recipe" load_steps=2 format=3 uid="uid://2kfeu8iywlgr"]
+
+[ext_resource type="Script" uid="uid://huvqt48l1o8m" path="res://Materials/recipe.gd" id="1_rfpy2"]
+
+[resource]
+script = ExtResource("1_rfpy2")
+product_id = "computer"
+stability_range = Vector2(0, 50)
+sorted_components_id = Array[String](["air", "earth", "fire"])
+metadata/_custom_type_script = "uid://huvqt48l1o8m"

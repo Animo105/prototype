@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Element" load_steps=3 format=3 uid="uid://7wndd6kf6l32"]
+
+[ext_resource type="Script" uid="uid://d1ygwtf3rlska" path="res://Materials/element.gd" id="1_epn45"]
+[ext_resource type="Texture2D" uid="uid://rpjukay3kbx4" path="res://Assets/air_crystal.png" id="2_ko8fp"]
+
+[resource]
+script = ExtResource("1_epn45")
+name = "Air Crystal"
+id = "air"
+texture = ExtResource("2_ko8fp")
+primary_type = 1
+sub_type = 2
+basic_value = 1.0
+metadata/_custom_type_script = "uid://d1ygwtf3rlska"

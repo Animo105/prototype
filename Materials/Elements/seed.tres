@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Element" load_steps=3 format=3 uid="uid://cmpent5urej2j"]
+
+[ext_resource type="Script" uid="uid://d1ygwtf3rlska" path="res://Materials/element.gd" id="1_pu3ve"]
+[ext_resource type="Texture2D" uid="uid://dchl3faehaql4" path="res://Assets/seed.png" id="2_pd1xw"]
+
+[resource]
+script = ExtResource("1_pu3ve")
+name = "Seed"
+id = "basic_seed"
+texture = ExtResource("2_pd1xw")
+primary_type = 2
+basic_value = 3.0
+metadata/_custom_type_script = "uid://d1ygwtf3rlska"
