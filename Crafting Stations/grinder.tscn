@@ -8,10 +8,8 @@
 [node name="Grinder" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 90.0
-offset_bottom = 77.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_right = 129.0
+offset_bottom = 129.0
 script = ExtResource("1_jyvgp")
 
 [node name="Main Part" type="TextureRect" parent="."]
@@ -22,7 +20,6 @@ offset_bottom = 40.0
 texture = ExtResource("4_unwhg")
 
 [node name="ElementSlot" parent="." instance=ExtResource("2_ehgqu")]
-custom_minimum_size = Vector2(64, 64)
 layout_mode = 0
 offset_left = 33.0
 offset_top = 30.0

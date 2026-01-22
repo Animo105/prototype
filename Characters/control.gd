@@ -1,5 +1,5 @@
 extends Control
-@onready var arm: TextureRect = $CenterContainer2/Arm
+@onready var arm: TextureRect = $Arm
 
 var isArmUp: bool = false
 
