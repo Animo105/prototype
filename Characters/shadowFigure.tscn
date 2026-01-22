@@ -7,13 +7,22 @@
 [node name="ShadowFigure" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_4syh5")
 
 [node name="Body" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 861.0
-offset_bottom = 935.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -964.0
+offset_top = 6.0
+offset_right = -103.0
+offset_bottom = 941.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_fryq1")
+script = ExtResource("1_4syh5")
 
 [node name="Arm" type="TextureRect" parent="Body"]
 layout_mode = 0
@@ -22,3 +31,13 @@ offset_top = 401.0
 offset_right = 620.0
 offset_bottom = 733.0
 texture = ExtResource("3_4syh5")
+
+[node name="Textbox" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 181.0
+offset_top = 217.0
+offset_right = 506.0
+offset_bottom = 393.0
+
+[connection signal="mouse_entered" from="Body" to="Body" method="_on_mouse_entered"]
