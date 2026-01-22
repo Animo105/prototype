@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://clwmy1blnmax6" path="res://SlotManagement/Scripts/infinite_slot.gd" id="1_lkesn"]
 
 [node name="Infinite Slot" type="PanelContainer"]
-custom_minimum_size = Vector2(32, 32)
+custom_minimum_size = Vector2(64, 64)
 offset_right = 40.0
 offset_bottom = 40.0
 mouse_default_cursor_shape = 2

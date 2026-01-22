@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcdfxu8xx5hhv"]
+
+[ext_resource type="Texture2D" uid="uid://cpqvrfkmr467t" path="res://Assets/firepit_cold.png" id="1_4ka1t"]
+[ext_resource type="Script" uid="uid://c8he48pgvq1ku" path="res://Crafting Stations/Scripts/fire_pit.gd" id="1_odqgi"]
+[ext_resource type="PackedScene" uid="uid://cmyf1ng3pfshx" path="res://SlotManagement/element_slot.tscn" id="3_st8po"]
+
+[node name="FirePit" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_odqgi")
+
+[node name="fuelLevel" type="Timer" parent="."]
+wait_time = 60.0
+one_shot = true
+
+[node name="Pit" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_4ka1t")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 146.0
+offset_top = 56.0
+offset_right = 211.0
+offset_bottom = 87.0
+text = "Fuel up"
+
+[node name="ElementSlot" parent="." instance=ExtResource("3_st8po")]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 31.0
+offset_right = 97.0
+offset_bottom = 95.0
+
+[connection signal="timeout" from="fuelLevel" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

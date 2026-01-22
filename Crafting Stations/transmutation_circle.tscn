@@ -7,18 +7,16 @@
 [node name="Transmutation Circle" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 145.0
-offset_bottom = 158.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_right = 201.0
+offset_bottom = 180.0
 script = ExtResource("1_mvurf")
 
 [node name="ElementSlot" parent="." instance=ExtResource("1_cfqfo")]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 0
-offset_left = 142.0
+offset_left = 138.0
 offset_top = 67.0
-offset_right = 206.0
+offset_right = 202.0
 offset_bottom = 131.0
 
 [node name="ElementSlot3" parent="." instance=ExtResource("1_cfqfo")]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://2mc268kl5fjc"]
+
+[ext_resource type="Texture2D" uid="uid://djdvf3c6gw8fk" path="res://Assets/bed.png" id="1_5j2ax"]
+[ext_resource type="Script" uid="uid://bkppr2ryk6hie" path="res://Crafting Stations/Scripts/bed.gd" id="2_gbvyw"]
+
+[node name="Bed" type="TextureRect"]
+custom_minimum_size = Vector2(64, 64)
+texture = ExtResource("1_5j2ax")
+script = ExtResource("2_gbvyw")

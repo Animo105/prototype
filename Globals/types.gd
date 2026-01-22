@@ -3,5 +3,5 @@ extends Node
 enum BasicElements { NONE, WATER, AIR, EARTH, FIRE }
 enum PrimalType { NONE, MINERAL, ORGANIC, ALLOY }
 enum SubType { NONE, SALT, CRYSTAL, METAL, ROCK, ROOT, FLOWER, LEAF }
-enum Tags { POWDER, CORRUPTED, PURIFIED }
+enum Tags { POWDER, CORRUPTED, PURIFIED, FUEL_T1, FUEL_T2, FUEL_T3 }
 enum MachinesTypes { TRANSMUTATION, GRINDER }

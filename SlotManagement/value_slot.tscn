@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://djrxrk7ac6361" path="res://SlotManagement/Scripts/value_slot.gd" id="1_7q70k"]
 
 [node name="Value Slot" type="PanelContainer"]
+custom_minimum_size = Vector2(64, 64)
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_7q70k")
@@ -28,6 +29,7 @@ offset_right = 22.5
 offset_bottom = 13.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_font_sizes/font_size = 20
 text = "PRICE"
 horizontal_alignment = 1
 vertical_alignment = 2

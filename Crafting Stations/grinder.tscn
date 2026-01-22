@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://crj04rpwy0pm1"]
+[gd_scene load_steps=5 format=3 uid="uid://crj04rpwy0pm1"]
 
 [ext_resource type="Script" uid="uid://yo23368esnns" path="res://Crafting Stations/Scripts/grinder.gd" id="1_jyvgp"]
 [ext_resource type="PackedScene" uid="uid://cmyf1ng3pfshx" path="res://SlotManagement/element_slot.tscn" id="2_ehgqu"]
-[ext_resource type="PackedScene" uid="uid://dqpo3sr18ca2r" path="res://SlotManagement/product_slot.tscn" id="3_unwhg"]
+[ext_resource type="Texture2D" uid="uid://b6buojikiq2k4" path="res://Assets/main_part.png" id="4_unwhg"]
+[ext_resource type="Texture2D" uid="uid://bm13wgpb2nqdh" path="res://Assets/lid.png" id="5_7dv6n"]
 
 [node name="Grinder" type="Control"]
 layout_mode = 3
@@ -13,26 +14,39 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_jyvgp")
 
+[node name="Main Part" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("4_unwhg")
+
 [node name="ElementSlot" parent="." instance=ExtResource("2_ehgqu")]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 0
-offset_right = 50.0
-offset_bottom = 32.0
+offset_left = 33.0
+offset_top = 30.0
+offset_right = 97.0
+offset_bottom = 94.0
 
-[node name="ProductSlot" parent="." instance=ExtResource("3_unwhg")]
-custom_minimum_size = Vector2(64, 64)
+[node name="Lid" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(128, 128)
 layout_mode = 0
-offset_left = 69.0
-offset_top = 1.0
-offset_right = 133.0
-offset_bottom = 65.0
+offset_right = 40.0
+offset_bottom = 40.0
+pivot_offset = Vector2(20, 20)
+mouse_default_cursor_shape = 2
+texture = ExtResource("5_7dv6n")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 23.0
-offset_top = 72.0
-offset_right = 119.0
-offset_bottom = 103.0
+offset_left = 16.0
+offset_top = 47.0
+offset_right = 112.0
+offset_bottom = 78.0
+disabled = true
 text = "Grind"
 
+[connection signal="mouse_entered" from="Lid" to="." method="_on_lid_mouse_entered"]
+[connection signal="mouse_exited" from="Lid" to="." method="_on_lid_mouse_exited"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

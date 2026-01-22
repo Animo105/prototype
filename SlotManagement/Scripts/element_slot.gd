@@ -1,6 +1,8 @@
 extends BasicSlot
 class_name ElementSlot
 
+signal elementChanged()
+
 @onready var texture_rect: TextureRect = $TextureRect
 
 func _ready() -> void:
@@ -8,6 +10,7 @@ func _ready() -> void:
 	self_modulate.a = 0.3
 
 func element_instance_changed():
+	elementChanged.emit()
 	if texture_rect:
 		if element_instance && element_instance.element:
 			texture_rect.texture = element_instance.element.texture

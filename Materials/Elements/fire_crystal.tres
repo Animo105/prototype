@@ -11,4 +11,5 @@ texture = ExtResource("2_78tv6")
 primary_type = 1
 sub_type = 2
 basic_value = 1.0
+tags = Array[int]([3])
 metadata/_custom_type_script = "uid://d1ygwtf3rlska"
